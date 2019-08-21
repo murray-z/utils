@@ -13,4 +13,5 @@
     - 其他实现
         - [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy)
         - [python-Levenshtein](https://github.com/miohtama/python-Levenshtein)
-
+- simhash.py
+    - 采用‘tf-idf’计算文本关键词权重，采用SimHash计算文本相似度
