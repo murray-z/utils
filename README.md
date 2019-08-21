@@ -8,3 +8,9 @@
     - 多分类数据结果评估
 - money_format.py
     - 将汉字金额或者阿拉伯金额转化为统一格式
+- edit_distance.py
+    - 计算字符串编辑距离
+    - 其他实现
+        - [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy)
+        - [python-Levenshtein](https://github.com/miohtama/python-Levenshtein)
+
