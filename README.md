@@ -31,5 +31,8 @@
         - -b gunicorn 启动绑定的host和port
         - --max-requests 最大处理量, 单woker进程如果处理了超过该数量的请求, 该woker会平滑重启
     - 参考
-        - [Flask服务部署](https://www.centos.bz/2017/07/flask-nginx-gunicorn-gevent/)    
+        - [Flask服务部署](https://www.centos.bz/2017/07/flask-nginx-gunicorn-gevent/) 
+  
+- trie_tree.py
+    - 构建trie树，包含插入、删除、查询、保存   
     
