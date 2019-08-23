@@ -86,7 +86,7 @@ class TrieTree:
     def save(self):
         """保存trie_tree"""
         with open(self.tree_save_path, 'w', encoding='utf-8') as f:
-            json.dumps(self.trie_tree, f, ensure_ascii=False, indent=4)
+            json.dump(self.trie_tree, f, ensure_ascii=False, indent=4)
             print("Trie tree saved to {}".format(self.tree_save_path))
 
 
