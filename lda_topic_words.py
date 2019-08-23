@@ -8,7 +8,7 @@ class TopicParse(object):
     """
     主题发现
     """
-    def __init__(self, train_data, n_components=10, n_top_words=50):
+    def __init__(self, train_data, n_components=10, n_top_words=50, max_iter=50):
         """
         :param train_data: 训练数据
 
@@ -19,10 +19,12 @@ class TopicParse(object):
 
         :param n_top_words:  每个主题提取的主题词数目
 
+        :param max_iter:  迭代次数
         """
         self.train_data = train_data
         self.n_components = n_components
         self.n_top_words = n_top_words
+        self.max_iter = max_iter
 
     def print_top_words(self, model, feature_names, n_top_words):
         ret_str = ''
@@ -39,7 +41,7 @@ class TopicParse(object):
 
         tf = tf_vectorizer.fit_transform(self.train_data)
 
-        lda = LatentDirichletAllocation(n_components=self.n_components, max_iter=50,
+        lda = LatentDirichletAllocation(n_components=self.n_components, max_iter=self.max_iter,
                                         learning_method='online',
                                         learning_offset=50.,
                                         random_state=0)
