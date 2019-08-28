@@ -34,5 +34,10 @@
         - [Flask服务部署](https://www.centos.bz/2017/07/flask-nginx-gunicorn-gevent/) 
   
 - trie_tree.py
-    - 构建trie树，包含插入、删除、查询、保存   
+    - 构建trie树，包含插入、删除、查询、保存 
+    
+- kashgari.py
+    - 深度学习框架，用于文本分类及序列标注
+    - [参考文档](https://kashgari-zh.bmio.net/)
+    - [git](https://github.com/BrikerMan/Kashgari/)  
     
