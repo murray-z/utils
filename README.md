@@ -39,5 +39,8 @@
 - kashgari.py
     - 深度学习框架，用于文本分类及序列标注
     - [参考文档](https://kashgari-zh.bmio.net/)
-    - [git](https://github.com/BrikerMan/Kashgari/)  
+    - [git](https://github.com/BrikerMan/Kashgari/) 
+  
+- sort.py
+    - 几种排序方法 
     
