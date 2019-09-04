@@ -45,3 +45,7 @@
     - 几种排序方法
     - [参考](https://github.com/amusi/Deep-Learning-Interview-Book/blob/master/docs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.md) 
     
+- Xgboost.py
+    - xgboost结合sklearn训练分类模型、回归模型
+    - [参考](https://blog.csdn.net/luanpeng825485697/article/details/79907149)
+    
