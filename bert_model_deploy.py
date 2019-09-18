@@ -72,7 +72,7 @@ step2：利用转换后模型进行预测
 Args:
     my_bert_model_path: step1生成模型路径
     vocab_path：词典文件路径
-    label_path: 标签文件路径
+    label_path: 标签文件路径, run_classifier.py 下 get_labels()中标签列表存放的文件
     batch_size: batch size
     max_seq_len: 最大序列长度
 
@@ -113,7 +113,10 @@ class BertPredict():
             label = [self.label_list[idx] for idx in probabilities.argmax(axis=1).tolist()]
             result.extend(label)
         return result
-
+        
+texts = []   
+predictor = BertPredict()
+labels = predictor.predict(texts)
 """
 
 
