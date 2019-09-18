@@ -48,4 +48,7 @@
 - Xgboost.py
     - xgboost结合sklearn训练分类模型、回归模型
     - [参考](https://blog.csdn.net/luanpeng825485697/article/details/79907149)
-    
+
+- bert_model_deploy.py
+    - bert fine-tune model 部署
+    - [参考](https://work.padeoe.com/notes/bert.html)  
