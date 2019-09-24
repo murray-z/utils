@@ -52,3 +52,6 @@
 - bert_model_deploy.py
     - bert fine-tune model 部署
     - [参考](https://work.padeoe.com/notes/bert.html)  
+    
+- word_cloud.py
+    - 采用wordcloud生成词云
