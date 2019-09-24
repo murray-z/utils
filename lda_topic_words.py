@@ -27,14 +27,12 @@ class TopicParse(object):
         self.max_iter = max_iter
 
     def print_top_words(self, model, feature_names, n_top_words):
-        ret_str = ''
+        ret = {}
         for topic_idx, topic in enumerate(model.components_):
-            message = "Topic #%d: " % topic_idx
-            message += " ".join([feature_names[i]
-                                 for i in topic.argsort()[:-n_top_words - 1:-1]])
-            ret_str += message+'\n'
-        print(ret_str)
-        return ret_str
+            key = "topic_{}".format(topic_idx)
+            val = [feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]
+            ret[key] = val
+        return ret
 
     def lda(self):
         tf_vectorizer = CountVectorizer()
@@ -53,3 +51,4 @@ class TopicParse(object):
 if __name__ == '__main__':
     topic_parse = TopicParse(["张三 在 中国移动 工作", "你 是 谁 ？"])
     topic_words = topic_parse.lda()
+    print(topic_words)
