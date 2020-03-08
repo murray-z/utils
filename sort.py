@@ -103,6 +103,35 @@ def quick_sort(array):
             left.append(item)
     return quick_sort(left)+[middle]+quick_sort(right)
 
+def merge_sort(array):
+    """
+    归并排序：
+    步骤：
+    1. 将列表分割成相等两份，每份递归，直到每份长度>1
+    2. 将分割后的小列表两两比较进行递归合并
+    """
+    # 设置递归结束条件
+    if len(array) <= 1:
+        return array
+    # 递归分割数组
+    mid = len(array) // 2
+    left = array[:mid]
+    right = array[mid:]
+
+    # 递归合并
+    merged = []
+    # 比较左右两部分
+    while left and right:
+        if left[0] < right[0]:
+            merged.append(left.pop(0))
+        else:
+            merged.append(right.pop(0))
+    # 如果左右比较完之后还有剩余，直接添加到mergerd
+    if left:
+        merged.extend(left)
+    if right:
+        merged.extend(right)
+    return merged
 
 if __name__ == '__main__':
     array = [5, 4, 7, 1, 6, 2]
@@ -110,3 +139,4 @@ if __name__ == '__main__':
     print('选择排序：', select_sort(array))
     print('插入排序：', insert_sort(array))
     print('快速排序：', quick_sort(array))
+    print('归并排序：', merge_sort(array))
