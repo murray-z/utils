@@ -55,3 +55,6 @@
     
 - word_cloud.py
     - 采用wordcloud生成词云
+
+- multiprocess_pool
+    - python 多进程
