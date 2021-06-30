@@ -58,3 +58,6 @@
 
 - multiprocess_pool
     - python 多进程
+
+- wechat_boom.py
+    - 微信消息轰炸
