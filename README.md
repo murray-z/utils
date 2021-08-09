@@ -61,3 +61,6 @@
 
 - wechat_boom.py
     - 微信消息轰炸
+
+- get_requirements.md
+    - 如何生成requirements.txt
